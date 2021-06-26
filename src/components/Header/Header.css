@@ -1,3 +1,30 @@
-.header h1 {
-  font-size: 4rem;
+.header {
+  position: relative;
+}
+
+.header .header-title_form h1 {
+  font-size: 4.5rem;
+}
+
+.header-title_form {
+  padding: 1rem 0 0 5rem;
+}
+
+.header__logo img {
+  height: 3.5rem;
+}
+
+.header .image {
+  background: #ffa801;
+  height: 29.5rem;
+  width: 24rem;
+  padding: 4rem 2rem;
+  top: 0;
+  right: 35rem;
+  position: absolute;
+}
+
+.header .image img{
+  height: 20rem;
+  color: #ffaa0d;
 }

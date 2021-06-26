@@ -1,8 +1,15 @@
 import "./App.css";
 import Header from "../components/Header/Header";
+import Recipe from "../components/Recipes/Recipe";
 import { Component } from "react";
+import axios from "axios";
 
 class App extends Component {
+  state = {
+    recipes: [],
+    error: false,
+  };
+
   getFocus = (e) => {
     e.target.placeholder = "";
   };
@@ -11,17 +18,41 @@ class App extends Component {
     e.target.placeholder = "Search your 🍲";
   };
 
-  getRecipe = (e) => {
+  getRecipe = async (e) => {
     e.preventDefault();
-    e.target.childNodes[0].value = "";
-    e.target.childNodes[0].blur();
-    console.log("HI");
+    let recipeName = e.target.childNodes[0];
+    try {
+      let recipe_api_res = await axios(
+        `https://forkify-api.herokuapp.com/api/search?q=${recipeName.value}`
+      );
+      const recipes = recipe_api_res.data.recipes;
+      // e.target.elements.(input-name).value  -> same as below
+      recipeName.value = "";
+      e.target.childNodes[0].blur();
+      this.setState({
+        recipes,
+        error: false,
+      });
+    } catch (err) {
+      console.log(err);
+      this.setState({
+        error: true,
+      });
+      recipeName.value = "";
+      e.target.childNodes[0].blur();
+    }
+    console.log(this.state);
   };
 
   render() {
     return (
       <div className="App">
-        <Header recipe={this.getRecipe} focus={this.getFocus} blur={this.getBlur}/>
+        <Header
+          recipe={this.getRecipe}
+          focus={this.getFocus}
+          blur={this.getBlur}
+        />
+        <Recipe recipes={this.state.recipes} error={this.state.error} />
       </div>
     );
   }
