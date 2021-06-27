@@ -7,7 +7,7 @@
 }
 
 .header-title_form {
-  padding: 1rem 0 0 5rem;
+  padding: 1rem 0 0 7rem;
 }
 
 .header__logo img {
@@ -16,11 +16,11 @@
 
 .header .image {
   background: #ffa801;
-  height: 29.5rem;
+  height: 27rem;
   width: 24rem;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   top: 0;
-  right: 35rem;
+  right: 21rem;
   position: absolute;
 }
 

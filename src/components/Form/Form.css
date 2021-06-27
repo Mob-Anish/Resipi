@@ -20,7 +20,7 @@ form input:focus {
   outline: none;
 }
 
-button {
+form button {
   cursor: pointer;
   border: none;
   background: none;

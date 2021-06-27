@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "../components/Header/Header";
-import Recipe from "../components/Recipes/Recipe";
+import Recipes from "../components/Recipes/Recipes";
 import { Component } from "react";
 import axios from "axios";
 
@@ -52,7 +52,7 @@ class App extends Component {
           focus={this.getFocus}
           blur={this.getBlur}
         />
-        <Recipe recipes={this.state.recipes} error={this.state.error} />
+        <Recipes recipes={this.state.recipes} error={this.state.error} />
       </div>
     );
   }

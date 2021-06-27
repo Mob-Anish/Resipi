@@ -1,0 +1,66 @@
+.recipes {
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+  display: grid;
+  max-width: 100rem;
+  margin: 0 auto;
+  grid-template-columns: 30rem 30rem 30rem;
+  grid-gap: 7rem;
+  column-gap: 5rem;
+}
+
+.recipes .recipe {
+  width: 29rem;
+  height: 34.5rem;
+  border-radius: 2rem;
+  background: #ffffff;
+}
+
+.recipes .recipe a,
+.recipes .recipe a:link,
+.recipes .recipe a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.recipes .recipe img {
+  border-radius: 2rem 2rem 0 0;
+  height: 20rem;
+  width: 29rem;
+}
+
+.recipes .recipe .recipe-info {
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: 13rem 9rem;
+  column-gap: 3rem;
+  align-items: center;
+}
+
+.recipes .recipe h2 {
+  color: #ffa801;
+}
+.recipes .recipe .recipe-info button {
+  padding: 1.3rem;
+  border: none;
+  border-radius: 1.5rem;
+  background: #ffa801;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.recipes h1 {
+  text-align: center;
+}
+
+.no--recipe__msg {
+  margin: 15rem auto 0 auto;
+  text-align: center;
+  background: #ffa801;
+  width: 65rem;
+  padding: 10rem;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 2.5rem;
+}
