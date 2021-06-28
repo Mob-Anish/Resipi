@@ -14,6 +14,11 @@
   height: 34.5rem;
   border-radius: 2rem;
   background: #ffffff;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .recipes .recipe a,
@@ -40,7 +45,10 @@
 .recipes .recipe h2 {
   color: #ffa801;
 }
-.recipes .recipe .recipe-info button {
+
+.recipes .recipe .recipe-info button,
+.recipes .recipe .recipe-info button:link,
+.recipes .recipe .recipe-info button:visited {
   padding: 1.3rem;
   border: none;
   border-radius: 1.5rem;
@@ -48,6 +56,22 @@
   font-size: 1.6rem;
   font-weight: 700;
   cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.recipes .recipe .recipe-info button:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.recipes .recipe .recipe-info button:active {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .recipes h1 {
