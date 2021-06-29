@@ -47,3 +47,8 @@ npm start
 
 ![ingredient](https://user-images.githubusercontent.com/75711381/123782169-c09bfc00-d8f4-11eb-86e3-9928ea55236d.PNG)
 
+
+### Limitaion
+
+* Not responsive.
+* Not all the recipes will be found in this app.
