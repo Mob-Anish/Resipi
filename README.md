@@ -1,4 +1,4 @@
-## Resipi App ![Rec-logo-2](https://user-images.githubusercontent.com/75711381/123782417-0ce73c00-d8f5-11eb-8def-f7214b684dfc.png)
+## Resipi App 🍲
 
 ### Overview 📓
 
