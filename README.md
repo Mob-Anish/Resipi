@@ -6,13 +6,13 @@
 - This application is completely made using the react and forkify api by Jonas Schmedtmann. You can also use the api without apiKey for the first version([apiDocs](https://forkify-api.herokuapp.com)). Though i use the first version of forkify api but you can try second version([apiDocs](https://forkify-api.herokuapp.com/v2)) also.
 - Though this is the recipe app but it has limited recipes under the hood provided by api([list](https://forkify-api.herokuapp.com/phrases.html)).
 
-### Tools required
+### Tools required 🧰
 
 * npm
 * git
 * IDE(VS-code,vim,etc..)
 
-### Getting Started
+### Getting Started 🚩
 
 * To run this project, first of all npm should already be installed on your device, clone this repository and now install it locally using npm:
 
@@ -32,14 +32,14 @@ cd Your-App-Name
 npm start
 ```
 
-### Technologies Used 
+### Technologies Used 🧑‍💻
 * React: 17.0.2
 * Axios: 0.21.1
 * [Forkify-Api](https://forkify-api.herokuapp.com)
 * LocalStorage
 * React-router: 5.2.0
 
-### Snapshot
+### Snapshot 📷
 
 ![Resipi](https://user-images.githubusercontent.com/75711381/123782089-a5c98780-d8f4-11eb-9ee2-928bcaff21b2.PNG)
 
