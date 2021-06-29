@@ -39,6 +39,11 @@ npm start
 * LocalStorage
 * React-router: 5.2.0
 
+### Snapshot
 
+![Resipi](https://user-images.githubusercontent.com/75711381/123782089-a5c98780-d8f4-11eb-9ee2-928bcaff21b2.PNG)
 
+![chicken](https://user-images.githubusercontent.com/75711381/123782132-b417a380-d8f4-11eb-926a-f21fd0329f08.PNG)
+
+![ingredient](https://user-images.githubusercontent.com/75711381/123782169-c09bfc00-d8f4-11eb-86e3-9928ea55236d.PNG)
 
