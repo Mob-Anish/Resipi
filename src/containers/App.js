@@ -37,6 +37,7 @@ class App extends Component {
       console.log(err);
       this.setState({
         error: true,
+        recipes: [],
       });
       recipeName.value = "";
       e.target.childNodes[0].blur();
