@@ -46,6 +46,14 @@
   color: #ffa801;
 }
 
+.recipes .recipe .recipe-info a,
+.recipes .recipe .recipe-info a:link,
+.recipes .recipe .recipe-info a:visited {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .recipes .recipe .recipe-info button,
 .recipes .recipe .recipe-info button:link,
 .recipes .recipe .recipe-info button:visited {
@@ -58,6 +66,7 @@
   cursor: pointer;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  color: #ffffff;
 }
 
 .recipes .recipe .recipe-info button:hover {

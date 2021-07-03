@@ -34,7 +34,6 @@ class App extends Component {
         error: false,
       });
     } catch (err) {
-      console.log(err);
       this.setState({
         error: true,
         recipes: [],
@@ -42,12 +41,10 @@ class App extends Component {
       recipeName.value = "";
       e.target.childNodes[0].blur();
     }
-    console.log(this.state);
   };
 
   // Getting local storage data items
   componentDidMount = () => {
-    console.log("Mounted");
     if (localStorage.getItem("recipes")) {
       const json = localStorage.getItem("recipes");
       const recipes = JSON.parse(json);
@@ -59,7 +56,6 @@ class App extends Component {
 
   // After the updating the state setting it into local storage
   componentDidUpdate = () => {
-    console.log("updated");
     const recipes = JSON.stringify(this.state.recipes);
     localStorage.setItem("recipes", recipes);
   };

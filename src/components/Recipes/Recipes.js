@@ -10,16 +10,14 @@ const Recipes = (props) => {
             <img src={recipe.image_url} alt={recipe.title} />
             <div className="recipe-info">
               <h2>{recipe.title}</h2>
-              <button className="view-recipe">
-                <Link
-                  to={{
-                    pathname: `/recipe/${recipe.recipe_id}`,
-                    state: { recipeId: recipe.recipe_id },
-                  }}
-                >
-                  Details
-                </Link>
-              </button>
+              <Link
+                to={{
+                  pathname: `/recipe/${recipe.recipe_id}`,
+                  state: { recipeId: recipe.recipe_id },
+                }}
+              >
+                <button className="view-recipe">Details</button>
+              </Link>
             </div>
           </div>
         );
